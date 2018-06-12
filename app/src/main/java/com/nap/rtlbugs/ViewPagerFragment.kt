@@ -5,7 +5,6 @@ import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.support.v4.content.ContextCompat
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -26,7 +25,6 @@ class ViewPagerFragment: Fragment() {
     }
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        Log.d("ASDASDViewPagerFragment", "Creating view")
         return inflater.inflate(R.layout.viewpager_fragment, container, false)
     }
 
@@ -34,8 +32,6 @@ class ViewPagerFragment: Fragment() {
     @SuppressLint("SetTextI18n")
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
-        Log.d("ASDASDViewPagerFragment", "onViewCreated")
 
         val index = arguments?.getInt(INDEX) ?: 0
         fragmentTitle.text = "Fragment $index"

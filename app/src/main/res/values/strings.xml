@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">RTL Bugs</string>
+
+    <string name="hello">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin elit odio, dapibus aliquam ipsum ut, dictum hendrerit neque. Donec gravida a dui nec venenatis. Etiam commodo consectetur magna, placerat bibendum nisl luctus vitae. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</string>
+
+    <string name="btn_change_lang">Switch language</string>
+</resources>

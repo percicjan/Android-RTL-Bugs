@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/button_round"
+    android:id="@+id/tag_text_view"
+    android:fontFamily="@font/secondary_font"
+    android:layout_gravity="center"
+    android:clickable="true"
+    android:focusable="true"
+    android:ellipsize="middle"
+    tools:text="1"
+    android:singleLine="true" />

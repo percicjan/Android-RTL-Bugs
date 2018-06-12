@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/bug1title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/spacing_single"
+        android:paddingTop="@dimen/spacing_single"
+        android:fontFamily="@font/primary_font"
+        android:text="BUG 1 - Font"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/bug1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/spacing_single"
+        android:fontFamily="@font/primary_font"
+        android:text="@string/hello"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bug1title"/>
+
+    <TextView
+        android:id="@+id/bug2title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/spacing_single"
+        android:paddingTop="@dimen/spacing_single"
+        android:fontFamily="@font/primary_font"
+        android:text="BUG 2 - Divider"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bug1"/>
+
+    <LinearLayout
+        android:id="@+id/bug2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_single"
+        android:layout_marginBottom="@dimen/spacing_single"
+        android:showDividers="middle"
+        android:divider="@drawable/spacer_double"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bug2title">
+
+        <View
+            android:layout_width="80dp"
+            android:layout_height="20dp"
+            android:background="#8e006d94"/>
+
+        <View
+            android:layout_width="80dp"
+            android:layout_height="20dp"
+            android:background="#8eFF4081"/>
+
+        <View
+            android:layout_width="80dp"
+            android:layout_height="20dp"
+            android:background="#8e006d94"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/bug3title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/spacing_single"
+        android:paddingTop="@dimen/spacing_single"
+        android:fontFamily="@font/primary_font"
+        android:text="BUG 3 - Recycler View Decorator"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bug2"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/bug3recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/spacing_single"
+        android:clipToPadding="false"
+        android:orientation="horizontal"
+        tools:listitem="@layout/viewtag_tag_item"
+        app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bug3title"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:elevation="2dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <Button
+            android:id="@+id/changeLanguageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/spacing_single"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:fontFamily="@font/primary_font"
+            android:text="@string/btn_change_lang"/>
+
+        <TextView
+            android:id="@+id/languageTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/spacing_single"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@id/changeLanguageButton"
+            android:fontFamily="@font/primary_font"
+            tools:text="Asdasd"/>
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

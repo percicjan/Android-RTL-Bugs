@@ -1,6 +1,7 @@
 package com.nap.rtlbugs
 
 import android.content.Context
+import android.content.Intent
 import android.content.Intent.*
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
@@ -42,6 +43,10 @@ class MainActivity : AppCompatActivity() {
                 ENGLISH_LOCALE
             }
             changeLocale(newLocale)
+        }
+
+        bug4button.setOnClickListener {
+            startActivity(Intent(this, ViewPagerActivity::class.java))
         }
     }
 

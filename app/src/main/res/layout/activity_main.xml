@@ -95,6 +95,28 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/bug3title"/>
 
+    <TextView
+        android:id="@+id/bug4title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/spacing_single"
+        android:paddingTop="@dimen/spacing_single"
+        android:fontFamily="@font/primary_font"
+        android:text="BUG 4 - Viewpager direction"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bug3recyclerview"/>
+
+    <Button
+        android:id="@+id/bug4button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Viewpager activity"
+        android:layout_margin="@dimen/spacing_single"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bug4title"/>
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

@@ -5,13 +5,13 @@ import android.support.v4.app.Fragment
 import android.support.v4.app.FragmentManager
 import android.support.v4.app.FragmentPagerAdapter
 import android.support.v7.app.AppCompatActivity
-import kotlinx.android.synthetic.main.viewpager_activity.*
+import kotlinx.android.synthetic.main.activity_viewpager.*
 
 class ViewPagerActivity: AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.viewpager_activity)
+        setContentView(R.layout.activity_viewpager)
 
         val adapter = ViewPagerAdapter(supportFragmentManager)
         for (index in 1..5) {

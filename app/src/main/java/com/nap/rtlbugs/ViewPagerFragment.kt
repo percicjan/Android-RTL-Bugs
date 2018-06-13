@@ -8,7 +8,7 @@ import android.support.v4.content.ContextCompat
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import kotlinx.android.synthetic.main.viewpager_fragment.*
+import kotlinx.android.synthetic.main.fragment_viewpager.*
 
 class ViewPagerFragment: Fragment() {
 
@@ -25,7 +25,7 @@ class ViewPagerFragment: Fragment() {
     }
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        return inflater.inflate(R.layout.viewpager_fragment, container, false)
+        return inflater.inflate(R.layout.fragment_viewpager, container, false)
     }
 
 
